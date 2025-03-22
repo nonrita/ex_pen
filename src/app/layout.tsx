@@ -13,7 +13,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>{children}</body>
+      <body className="bg-white">
+        <header className="bg-amber-500 py-1 px-4">
+          <h1 className="text-amber-50 text-2xl font-bold">EX PEN</h1>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
